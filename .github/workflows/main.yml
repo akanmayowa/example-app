@@ -14,7 +14,7 @@ jobs:
       -   name: Speed up the packages installation process
           run: composer create-project laravel/laravel example-app
       -   name: Install Packages
-          run: composer update --no-dev
+          run: composer install --no-dev
       -   name: Deploy to Server
           uses: ngocquyhoang/deploy@laravel
           with:
